@@ -1,0 +1,155 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "/Users/Grayfox/Repositories/react-seed/node_modules/glamor/package.json",
+    "raw": "npm:glamor",
+    "main": "lib/index.js",
+    "typings": "index.d.ts",
+    "version": "2.17.14",
+    "global": false,
+    "dependencies": {
+      "fbjs": {
+        "src": "/Users/Grayfox/Repositories/react-seed/node_modules/glamor/node_modules/fbjs/package.json",
+        "raw": "npm:fbjs",
+        "main": "index.js",
+        "version": "0.8.5",
+        "global": false,
+        "dependencies": {
+          "core-js": {
+            "src": "/Users/Grayfox/Repositories/react-seed/node_modules/glamor/node_modules/core-js/package.json",
+            "raw": "npm:core-js",
+            "main": "index.js",
+            "version": "1.2.7",
+            "global": false,
+            "name": "core-js"
+          },
+          "immutable": {
+            "src": "/Users/Grayfox/Repositories/react-seed/node_modules/immutable/package.json",
+            "raw": "npm:immutable",
+            "main": "dist/immutable.js",
+            "typings": "dist/immutable-nonambient.d.ts",
+            "version": "3.8.1",
+            "global": false,
+            "name": "immutable"
+          },
+          "isomorphic-fetch": {
+            "src": "/Users/Grayfox/Repositories/react-seed/node_modules/isomorphic-fetch/package.json",
+            "raw": "npm:isomorphic-fetch",
+            "main": "fetch-npm-node.js",
+            "browser": "fetch-npm-browserify.js",
+            "version": "2.2.1",
+            "global": false,
+            "dependencies": {
+              "node-fetch": {
+                "src": "/Users/Grayfox/Repositories/react-seed/node_modules/node-fetch/package.json",
+                "raw": "npm:node-fetch",
+                "main": "index.js",
+                "version": "1.6.3",
+                "global": false,
+                "dependencies": {
+                  "encoding": {
+                    "src": "/Users/Grayfox/Repositories/react-seed/node_modules/encoding/package.json",
+                    "raw": "npm:encoding",
+                    "main": "lib/encoding.js",
+                    "version": "0.1.12",
+                    "global": false,
+                    "dependencies": {
+                      "iconv-lite": {
+                        "src": "/Users/Grayfox/Repositories/react-seed/node_modules/iconv-lite/package.json",
+                        "raw": "npm:iconv-lite",
+                        "main": "./lib/index.js",
+                        "browser": {
+                          "./extend-node": false,
+                          "./streams": false
+                        },
+                        "version": "0.4.13",
+                        "global": false,
+                        "name": "iconv-lite"
+                      }
+                    },
+                    "name": "encoding"
+                  },
+                  "is-stream": {
+                    "src": "/Users/Grayfox/Repositories/react-seed/node_modules/is-stream/package.json",
+                    "raw": "npm:is-stream",
+                    "version": "1.1.0",
+                    "global": false,
+                    "name": "is-stream"
+                  }
+                },
+                "name": "node-fetch"
+              },
+              "whatwg-fetch": {
+                "src": "/Users/Grayfox/Repositories/react-seed/node_modules/whatwg-fetch/package.json",
+                "raw": "npm:whatwg-fetch",
+                "main": "fetch.js",
+                "version": "1.0.0",
+                "global": false,
+                "name": "whatwg-fetch"
+              }
+            },
+            "name": "isomorphic-fetch"
+          },
+          "loose-envify": {
+            "src": "/Users/Grayfox/Repositories/react-seed/node_modules/loose-envify/package.json",
+            "raw": "npm:loose-envify",
+            "version": "1.2.0",
+            "global": false,
+            "dependencies": {
+              "js-tokens": {
+                "src": "/Users/Grayfox/Repositories/react-seed/node_modules/js-tokens/package.json",
+                "raw": "npm:js-tokens",
+                "version": "1.0.3",
+                "global": false,
+                "name": "js-tokens"
+              }
+            },
+            "name": "loose-envify"
+          },
+          "object-assign": {
+            "src": "/Users/Grayfox/Repositories/react-seed/node_modules/object-assign/package.json",
+            "raw": "npm:object-assign",
+            "version": "4.1.0",
+            "global": false,
+            "name": "object-assign"
+          },
+          "promise": {
+            "src": "/Users/Grayfox/Repositories/react-seed/node_modules/promise/package.json",
+            "raw": "npm:promise",
+            "main": "index.js",
+            "version": "7.1.1",
+            "global": false,
+            "dependencies": {
+              "asap": {
+                "src": "/Users/Grayfox/Repositories/react-seed/node_modules/asap/package.json",
+                "raw": "npm:asap",
+                "main": "./asap.js",
+                "browser": {
+                  "./asap": "./browser-asap.js",
+                  "./asap.js": "./browser-asap.js",
+                  "./raw": "./browser-raw.js",
+                  "./raw.js": "./browser-raw.js",
+                  "./test/domain.js": "./test/browser-domain.js"
+                },
+                "version": "2.0.5",
+                "global": false,
+                "name": "asap"
+              }
+            },
+            "name": "promise"
+          },
+          "ua-parser-js": {
+            "src": "/Users/Grayfox/Repositories/react-seed/node_modules/ua-parser-js/package.json",
+            "raw": "npm:ua-parser-js",
+            "main": "src/ua-parser.js",
+            "version": "0.7.10",
+            "global": false,
+            "name": "ua-parser-js"
+          }
+        },
+        "name": "fbjs"
+      }
+    },
+    "name": "glamor"
+  }
+}

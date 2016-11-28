@@ -1,0 +1,79 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "/Users/Grayfox/Repositories/react-seed/node_modules/bss-hw-api/package.json",
+    "raw": "npm:bss-hw-api",
+    "main": "./dist/hw.min.js",
+    "typings": "./lib/src/index",
+    "version": "2.1.3",
+    "global": false,
+    "dependencies": {
+      "jwt-decode": {
+        "src": "/Users/Grayfox/Repositories/react-seed/node_modules/jwt-decode/package.json",
+        "raw": "npm:jwt-decode",
+        "main": "lib/index.js",
+        "version": "2.1.0",
+        "global": false,
+        "name": "jwt-decode"
+      },
+      "query-string": {
+        "src": "/Users/Grayfox/Repositories/react-seed/node_modules/query-string/package.json",
+        "raw": "npm:query-string",
+        "version": "4.2.3",
+        "global": false,
+        "dependencies": {
+          "object-assign": {
+            "src": "/Users/Grayfox/Repositories/react-seed/node_modules/object-assign/package.json",
+            "raw": "npm:object-assign",
+            "version": "4.1.0",
+            "global": false,
+            "name": "object-assign"
+          },
+          "strict-uri-encode": {
+            "src": "/Users/Grayfox/Repositories/react-seed/node_modules/strict-uri-encode/package.json",
+            "raw": "npm:strict-uri-encode",
+            "version": "1.1.0",
+            "global": false,
+            "name": "strict-uri-encode"
+          }
+        },
+        "name": "query-string"
+      },
+      "whatwg-fetch": {
+        "src": "/Users/Grayfox/Repositories/react-seed/node_modules/whatwg-fetch/package.json",
+        "raw": "npm:whatwg-fetch",
+        "main": "fetch.js",
+        "version": "1.0.0",
+        "global": false,
+        "name": "whatwg-fetch"
+      },
+      "xml-mapping": {
+        "src": "/Users/Grayfox/Repositories/react-seed/node_modules/xml-mapping/package.json",
+        "raw": "npm:xml-mapping",
+        "main": "./xml-mapping.js",
+        "version": "1.7.1",
+        "global": false,
+        "dependencies": {
+          "xml-writer": {
+            "src": "/Users/Grayfox/Repositories/react-seed/node_modules/xml-writer/package.json",
+            "raw": "npm:xml-writer",
+            "main": "./index.js",
+            "version": "1.6.0",
+            "global": false,
+            "name": "xml-writer"
+          },
+          "sax": {
+            "src": "/Users/Grayfox/Repositories/react-seed/node_modules/sax/package.json",
+            "raw": "npm:sax",
+            "main": "lib/sax.js",
+            "version": "0.4.2",
+            "global": false,
+            "name": "sax"
+          }
+        },
+        "name": "xml-mapping"
+      }
+    },
+    "name": "bss-hw-api"
+  }
+}

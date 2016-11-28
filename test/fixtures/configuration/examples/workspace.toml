@@ -1,0 +1,230 @@
+[i18n]
+  default = "en"
+  [i18n.en]
+    i18n_UM = "UMM"
+    i18n_fakeApp1 = "EDC"
+    i18n_fakeApp2 = "NP5"
+    i18n_fakeApp3 = "PQR"
+    i18n_fakeApp4 = "eReview"
+    i18n_fakeApp5 = "eOrder"
+    i18n_fakeApp6 = "CNECH"
+    i18n_inbox = "Inbox"
+    i18n_logout = "Logout"
+    i18n_mapping_assignedDate = "Assigned Date"
+    i18n_mapping_assignees = "Assignees"
+    i18n_mapping_creator = "Creator"
+    i18n_mapping_identificationKey = "Identification Key"
+    i18n_mapping_textAttribute1 = "NP4 Request Form"
+    i18n_mapping_textAttribute2 = "Text Attribute 2"
+    i18n_mapping_textAttribute3 = "Therapeutical Area"
+    i18n_mapping_title = "Title"
+    i18n_maxima = "Maxima"
+    i18n_maxima_create = "Create"
+    i18n_maxima_search = "Search"
+    i18n_maxima_wk = "Workspace"
+    i18n_title = "China workspace"
+    i18n_views = "Views"
+    i18n_views_admintaskview = "Administrative Tasks"
+    i18n_views_myRequestsView = "My Requests"
+    i18n_views_mytaskview = "My Tasks"
+    i18n_worklist_fetchingTasks = "Wait while we are fetching tasks."
+    i18n_worklist_noTaskFound = "No tasks were found for the current view."
+    i18n_worklist_page = "Page"
+    i18n_worklist_rows = "Rows"
+
+[[project]]
+  dateFormat = "MM/dd/yyyy"
+  projectId = "maxima"
+  title = "i18n_maxima"
+
+  [[project.applications]]
+    appId = "create"
+    appLabelKey = "i18n_maxima_create"
+    appUrl = "/Maxima/#/create-request-maxima"
+    type = "iframe"
+
+  [[project.applications]]
+    appId = "search"
+    appLabelKey = "i18n_maxima_search"
+    appUrl = "/Maxima/#/search-maxima"
+    type = "iframe"
+
+  [[project.applications]]
+    appId = "workspace"
+    appLabelKey = "i18n_maxima_wk"
+    appUrl = "/Maxima/#/workspace/main"
+    type = "iframe"
+
+  [[project.applications]]
+    appId = "um"
+    appLabelKey = "i18n_UM"
+    appUrl = "/UMAdminApp"
+    type = "iframe"
+  [project.bpm]
+
+    [[project.bpm.humantasks]]
+      taskDefinitionId = "default/eAppKernel!1.0/ApproveHumanTask"
+      taskName = "Approve"
+      taskUrl = "/Maxima/#/eapp-form-worklist"
+      type = "iframe"
+
+    [[project.bpm.humantasks]]
+      taskDefinitionId = "default/UMMBusinessProcesses!1.0/ManageException"
+      taskName = "ManageException"
+      taskUrl = "/UMAdminApp/#/approval"
+      type = "iframe"
+
+    [[project.bpm.humantasks]]
+      taskDefinitionId = "default/UMMBusinessProcesses!1.0/ManageException"
+      taskName = "ManageException"
+      taskUrl = "/UMAdminApp/#/approval"
+      type = "iframe"
+
+    [[project.bpm.mappings]]
+      i18n = "i18n_mapping_textAttribute1"
+      key = "systemMessageAttributes.textAttribute1"
+      name = "textAttribute1"
+
+    [[project.bpm.mappings]]
+      i18n = "i18n_mapping_identificationKey"
+      key = "identificationKey"
+      name = "identificationKey"
+
+    [[project.bpm.mappings]]
+      i18n = "i18n_mapping_title"
+      key = "title"
+      name = "title"
+
+    [[project.bpm.mappings]]
+      i18n = "i18n_mapping_textAttribute3"
+      key = "systemMessageAttributes.textAttribute3"
+      name = "textAttribute3"
+
+    [[project.bpm.mappings]]
+      i18n = "i18n_mapping_creator"
+      key = "creator"
+      name = "creator"
+
+    [[project.bpm.mappings]]
+      i18n = "i18n_mapping_textAttribute2"
+      key = "systemMessageAttributes.textAttribute2"
+      name = "textAttribute2"
+
+    [[project.bpm.mappings]]
+      format = "{{dateFormat data format='MM/DD/YY'}}"
+      i18n = "i18n_mapping_assignedDate"
+      key = "assignedDate"
+      name = "assignedDate"
+
+    [[project.bpm.mappings]]
+      format = "{{#each data}}{{id}}{{#unless @last}}, {{/unless}}{{/each}}"
+      i18n = "i18n_mapping_assignees"
+      key = "assignees"
+      name = "assignees"
+
+    [[project.bpm.sections]]
+      id = "inbox"
+      label = "i18n_inbox"
+
+    [[project.bpm.sections]]
+      id = "views"
+      label = "i18n_views"
+
+    [[project.bpm.views]]
+      columns = ["textAttribute1", "identificationKey", "title", "textAttribute3", "creator", "textAttribute2", "assignedDate", "assignees"]
+      id = "myTasksView"
+      key = "i18n_views_mytaskview"
+      section = "inbox"
+      [project.bpm.views.filter]
+        assignmentFilter = "MY_GROUP"
+
+        [[project.bpm.views.filter.clauses]]
+          column = "state"
+          join = "AND"
+          operator = "EQ"
+          value = "ASSIGNED"
+
+    [[project.bpm.views]]
+      columns = ["identificationKey", "title", "creator", "textAttribute2", "assignedDate", "assignees"]
+      id = "myRequestsView"
+      key = "i18n_views_myRequestsView"
+      section = "inbox"
+      [project.bpm.views.filter]
+        assignmentFilter = "CREATOR"
+
+        [[project.bpm.views.filter.clauses]]
+          column = "creator"
+          join = "AND"
+          operator = "EQ"
+          value = "%LOGGED_USER%"
+
+        [[project.bpm.views.filter.clauses]]
+          column = "state"
+          join = "AND"
+          operator = "EQ"
+          value = "ASSIGNED"
+
+    [[project.bpm.views]]
+      columns = ["title", "creator", "assignedDate", "assignees"]
+      id = "adminTasksView"
+      key = "i18n_views_admintaskview"
+      section = "views"
+      [project.bpm.views.filter]
+        assignmentFilter = "MY_GROUP"
+
+        [[project.bpm.views.filter.clauses]]
+          column = "state"
+          join = "AND"
+          operator = "EQ"
+          value = "ASSIGNED"
+  [project.layout]
+    height = 0.25
+    width = 0.25
+
+[[project]]
+  projectId = "fakeApp1"
+  title = "i18n_fakeApp1"
+  [project.layout]
+    height = 0.15
+    width = 0.25
+
+[[project]]
+  projectId = "fakeApp2"
+  title = "i18n_fakeApp2"
+  [project.layout]
+    height = 0.15
+    width = 0.25
+
+[[project]]
+  projectId = "fakeApp3"
+  title = "i18n_fakeApp3"
+  [project.layout]
+    height = 0.15
+    width = 0.2
+
+[[project]]
+  projectId = "fakeApp4"
+  title = "i18n_fakeApp4"
+  [project.layout]
+    height = 0.15
+    width = 0.15
+
+[[project]]
+  projectId = "fakeApp5"
+  title = "i18n_fakeApp5"
+  [project.layout]
+    height = 0.15
+    width = 0.15
+
+[[project]]
+  projectId = "fakeApp6"
+  title = "i18n_fakeApp6"
+  [project.layout]
+    height = 0.1
+    width = 0.15
+
+[workspace]
+  logout = "i18n_logout"
+  logoutRedirectUrl = "/LoginApp"
+  title = "i18n_title"
+

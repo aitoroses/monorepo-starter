@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "/Users/Grayfox/Repositories/react-seed/typings/lib/storybook.d.ts",
+    "raw": "file:typings/lib/storybook.d.ts",
+    "typings": "/Users/Grayfox/Repositories/react-seed/typings/lib/storybook.d.ts"
+  }
+}
