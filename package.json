@@ -1,12 +1,13 @@
 {
-  "name": "react-starter",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "lerna": "2.0.0-beta.30",
-    "ts-helpers": "^1.1.2",
-    "tslint": "^4.0.2",
-    "typescript": "^2.0.10"
-  }
+    "name": "react-starter",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "postinstall": "autolink bootstrap",
+        "start": "autolink exec --scope @application/core --script start"
+    },
+    "devDependencies": {
+        "yarn-autolink": "1.0.0"
+    }
 }

@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run server:dev",
+    "build:dev": "webpack --config config/webpack.dev.js --progress --profile",
+    "build:prod": "webpack --config config/webpack.prod.js --progress --profile",
     "server:dev": "webpack-dev-server --config config/webpack.dev.js --progress --profile --watch --content-base src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,7 +20,6 @@
     "@types/webpack": "^2.0.0",
     "assets-webpack-plugin": "^3.5.0",
     "awesome-typescript-loader": "^2.2.4",
-    "babel-core": "^6.18.2",
     "copy-webpack-plugin": "^4.0.1",
     "extract-text-webpack-plugin": "^2.0.0-beta.4",
     "html-webpack-plugin": "^2.24.1",
@@ -30,6 +31,8 @@
     "webpack-merge": "^1.0.2"
   },
   "dependencies": {
+    "babel-core": "^6.18.2",
+    "core-js": "^2.4.1",
     "es6-promise": "^4.0.5",
     "isomorphic-fetch": "^2.2.1",
     "ramda": "^0.22.1",
@@ -45,5 +48,8 @@
     "redux-freeze": "^0.1.5",
     "redux-saga": "^0.13.0",
     "redux-thunk": "^2.1.0"
+  },
+  "linkDependencies": {
+    "alpha": "1.0.0"
   }
 }
