@@ -1,1 +1,1 @@
-console.log("lel")
+module.exports 'alpha'
