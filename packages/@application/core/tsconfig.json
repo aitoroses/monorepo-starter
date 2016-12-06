@@ -23,7 +23,9 @@
       "uglify-js",
       "webpack",
       "react",
-      "react-dom"
+      "react-dom",
+      "ramda",
+      "whatwg-fetch"
     ]
   },
   "exclude": [
