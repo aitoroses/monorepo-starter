@@ -5,7 +5,8 @@
     "license": "MIT",
     "scripts": {
         "postinstall": "autolink bootstrap",
-        "start": "autolink exec --scope @application/core --script start"
+        "start":       "autolink exec --scope @application/core --script start",
+        "storybook":   "autolink exec --scope @application/storybook --script start"
     },
     "devDependencies": {
         "yarn-autolink": "1.0.0"

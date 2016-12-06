@@ -2,5 +2,8 @@
   "@application/core": [
     "alpha"
   ],
+  "@application/storybook": [
+    "@application/core"
+  ],
   "alpha": []
 }
