@@ -1,0 +1,24 @@
+{
+  "name": "@application/storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run storybook",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "@kadira/storybook": "^2.21.0"
+  },
+  "linkDependencies": {
+      "@application/core": "1.0.0"
+  }
+}

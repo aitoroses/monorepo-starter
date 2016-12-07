@@ -1,7 +1,4 @@
-.vscode
+.DS_Store
 node_modules
-bower_components
-build
-npm-debug.log
-docs/_book
-release
+.awcache
+dist
