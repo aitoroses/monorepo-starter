@@ -30,6 +30,7 @@ function* logEffectSaga(): any {
         query({q: 'kittens', sort: 'new'}),
         create('GET'))
         ('https://www.reddit.com/r/pics/search.json')
+
 }
 
 export const logForkEffect = fork(logEffectSaga)

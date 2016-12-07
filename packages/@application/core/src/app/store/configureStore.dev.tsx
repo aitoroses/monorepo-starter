@@ -33,6 +33,8 @@ import ReduxThunk from 'redux-thunk'
 import createSagaMiddleware from 'redux-saga'
 const sagaMiddleware = createSagaMiddleware()
 
+// Redux Freeze
+import freezeMiddleware from 'redux-freeze'
 
 import { routerMiddleware, syncHistoryWithStore } from 'react-router-redux'
 import { hashHistory } from 'react-router'
@@ -47,7 +49,7 @@ export function configureStore(rootReducer, rootSaga, initialState?) {
   finalCreateStore = compose(
 
     // State freeze middleware
-    applyMiddleware(require('redux-freeze')),
+    applyMiddleware(freezeMiddleware),
 
     // Saga middleware
     applyMiddleware(sagaMiddleware),

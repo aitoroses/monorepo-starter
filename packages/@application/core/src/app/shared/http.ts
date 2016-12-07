@@ -31,10 +31,12 @@ export const body = (bodyObj) => (req: Request): Request => {
 
 export const auth = (req: Request): Request => {
     try {
-        let token = atob(localStorage.getItem('auth.token'))
-        req.headers['Authorization'] = token
+        let storageToken = localStorage.getItem('auth.token')
+        if (!storageToken) throw Error('Not token present')
+        let token = atob(storageToken)
+        req.headers['Authorization'] = `Bearer ${token}`
     } catch (e) {
-        console.error(e)
+        // console.error(e)
     } finally {
         return req
     }
