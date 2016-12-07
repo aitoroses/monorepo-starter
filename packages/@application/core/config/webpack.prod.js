@@ -98,6 +98,14 @@ module.exports = function (env) {
       new WebpackMd5Hash(),
 
       /**
+       * Plugin: V8LazyParseWebpackPlugin
+       * Description: Plugin to exploit the V8 treatment of functions
+       *
+       * See: https://www.npmjs.com/package/webpack-md5-hash
+       */
+      new V8LazyParseWebpackPlugin(),
+
+      /**
        * Plugin: DedupePlugin
        * Description: Prevents the inclusion of duplicate code into your bundle
        * and instead applies a copy of the function at runtime.

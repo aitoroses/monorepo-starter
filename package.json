@@ -7,6 +7,7 @@
         "postinstall": "autolink bootstrap",
         "dev:application": "autolink exec --scope @application/core --script start",
         "dev:storybook": "autolink exec --scope @application/storybook --script start",
+        "build:application": "autolink exec --scope @application/core --script build:prod",
         "start": "run-p -l 'dev:**'"
     },
     "devDependencies": {
