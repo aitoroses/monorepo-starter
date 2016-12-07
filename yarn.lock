@@ -6,6 +6,46 @@
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-0.0.2.tgz#0da4934902fbf68a97a0f53204a35ad2224917bc"
 
+"@types/ramda@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.0.2.tgz#04e9b560b118eaf48542945ef9b2701c3f9832e3"
+
+"@types/react-dom@^0.14.19":
+  version "0.14.19"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-0.14.19.tgz#698a14335e32fb1bc61db65f5647c9668a7fc2eb"
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^0.14.52":
+  version "0.14.54"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-0.14.54.tgz#0fb0dadad895febeb468a885d0fa2284d5bbefae"
+
+"@types/source-map@*", "@types/source-map@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@types/source-map/-/source-map-0.5.0.tgz#dd34bbd8e32fe4e74f2e3d8ac07f8aa5b45a47ac"
+
+"@types/uglify-js@*", "@types/uglify-js@^2.6.28":
+  version "2.6.28"
+  resolved "https://registry.yarnpkg.com/@types/uglify-js/-/uglify-js-2.6.28.tgz#1499b48ca3a44132250b318cdde25b8f45f0c616"
+  dependencies:
+    "@types/source-map" "*"
+
+"@types/webpack@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-2.0.0.tgz#e7934a1c0bb628e1940f090c0afd2682817c1def"
+  dependencies:
+    "@types/uglify-js" "*"
+
+"@types/whatwg-fetch@^0.0.32":
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/@types/whatwg-fetch/-/whatwg-fetch-0.0.32.tgz#ded91dbae1e6ffb826f14b171a67e7f7e508d0c5"
+  dependencies:
+    "@types/whatwg-streams" "*"
+
+"@types/whatwg-streams@*":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@types/whatwg-streams/-/whatwg-streams-0.0.1.tgz#b9d8f23d8320939bea12dc7a48e530fdb21009b3"
+
 ansi-regex@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.0.0.tgz#c5061b6e0ef8a81775e50f5d66151bf6bf371107"
@@ -360,6 +400,10 @@ ps-tree@^1.0.1:
 pseudomap@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
+
+raw-loader@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-0.5.1.tgz#0c3d0beaed8a01c966d9787bf778281252a979aa"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"

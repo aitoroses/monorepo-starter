@@ -18,7 +18,14 @@
       "es6"
     ],
     "types": [
-        "node"
+      "node",
+      "source-map",
+      "uglify-js",
+      "webpack",
+      "react",
+      "react-dom",
+      "ramda",
+      "whatwg-fetch"
     ]
   },
   "exclude": [

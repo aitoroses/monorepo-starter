@@ -34,7 +34,7 @@ import createSagaMiddleware from 'redux-saga'
 const sagaMiddleware = createSagaMiddleware()
 
 // Redux Freeze
-import freezeMiddleware from 'redux-freeze'
+import * as freezeMiddleware from 'redux-freeze'
 
 import { routerMiddleware, syncHistoryWithStore } from 'react-router-redux'
 import { hashHistory } from 'react-router'

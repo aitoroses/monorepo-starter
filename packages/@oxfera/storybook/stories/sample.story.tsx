@@ -1,25 +1,12 @@
 import * as React from 'react';
 
 import { storiesOf, action, linkTo } from '@kadira/storybook';
-import { css } from 'glamor'
+import { Playground } from './components/Base'
 
+const helloComponentExample = require('raw!./examples/HelloComponent.txt')
 
-import { HelloComponent } from '@oxfera/core/src/app/hello/components/HelloComponent'
-import Playground from 'component-playground'
-
-const scope = {
-    React,
-    HelloComponent
-}
-
-
-const codeExample = `
-    <HelloComponent message='Hello Daniel' />
-`
-
-  storiesOf('@application/core', module)
-    .add('test', () => (
-      <Playground
-        codeText={codeExample}
-        scope={scope} />
-    ))
+storiesOf('@application/core', module)
+.add('test', () => (
+  <Playground
+    code={helloComponentExample}/>
+))
