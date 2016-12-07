@@ -1,6 +1,6 @@
 {
-  "@oxfera/core": [],
-  "@oxfera/storybook": [
-    "@oxfera/core"
+  "@application/core": [],
+  "@application/storybook": [
+    "@application/core"
   ]
 }

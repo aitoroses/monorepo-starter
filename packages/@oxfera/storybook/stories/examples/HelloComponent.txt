@@ -1,5 +1,0 @@
-/**
- * @prop {String} message
- */
-
-<HelloComponent message='Hello Daniel' />

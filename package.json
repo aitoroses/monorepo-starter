@@ -5,8 +5,8 @@
     "license": "MIT",
     "scripts": {
         "postinstall": "autolink bootstrap",
-        "dev:application": "autolink exec --scope @oxfera/core --script start",
-        "dev:storybook": "autolink exec --scope @oxfera/storybook --script start",
+        "dev:application": "autolink exec --scope @application/core --script start",
+        "dev:storybook": "autolink exec --scope @application/storybook --script start",
         "start": "run-p -l 'dev:**'"
     },
     "devDependencies": {

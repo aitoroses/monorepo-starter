@@ -1,4 +1,4 @@
-import { HelloComponent } from '@oxfera/core/src/app/hello/components/HelloComponent'
+import { HelloComponent } from '@application/core/src/app/hello/components/HelloComponent'
 import * as React from 'react';
 
 class Center extends React.Component<any, any> {
