@@ -1,8 +1,0 @@
-{
-  "resolution": "main",
-  "tree": {
-    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/3c70948e06741d3cd93ec5ee892b98cccf5ab69c/react-router/history.d.ts",
-    "raw": "github:DefinitelyTyped/DefinitelyTyped/react-router/history.d.ts#3c70948e06741d3cd93ec5ee892b98cccf5ab69c",
-    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/3c70948e06741d3cd93ec5ee892b98cccf5ab69c/react-router/history.d.ts"
-  }
-}

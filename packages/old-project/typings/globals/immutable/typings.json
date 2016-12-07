@@ -1,8 +1,0 @@
-{
-  "resolution": "main",
-  "tree": {
-    "src": "/Users/Grayfox/Repositories/react-seed/node_modules/immutable/dist/immutable.d.ts",
-    "raw": "npm:immutable/dist/immutable.d.ts",
-    "typings": "/Users/Grayfox/Repositories/react-seed/node_modules/immutable/dist/immutable.d.ts"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "resolution": "main",
-  "tree": {
-    "src": "/Users/Grayfox/Repositories/react-seed/node_modules/@grayfox/tsmonad/lib/src/index.d.ts",
-    "raw": "npm:@grayfox/tsmonad/lib/src/index.d.ts",
-    "typings": "/Users/Grayfox/Repositories/react-seed/node_modules/@grayfox/tsmonad/lib/src/index.d.ts"
-  }
-}

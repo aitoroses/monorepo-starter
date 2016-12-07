@@ -1,8 +1,0 @@
-{
-  "resolution": "main",
-  "tree": {
-    "src": "/Users/Grayfox/Repositories/react-seed/node_modules/reflect-metadata/reflect-metadata.d.ts",
-    "raw": "npm:reflect-metadata/reflect-metadata.d.ts",
-    "typings": "/Users/Grayfox/Repositories/react-seed/node_modules/reflect-metadata/reflect-metadata.d.ts"
-  }
-}
